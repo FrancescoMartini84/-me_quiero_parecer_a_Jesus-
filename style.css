@@ -286,3 +286,12 @@ label:focus-within {
         font-size: 0.95rem;
     }
 }
+
+/* Never cross out completed merits */
+
+.merit-item,
+.merit-item span,
+.merit-checkbox:checked + span {
+    text-decoration: none !important;
+    color: var(--text-dark) !important;
+}
