@@ -166,7 +166,6 @@ body {
 
 .merit-checkbox:checked + span {
     color: var(--text-muted);
-    text-decoration: line-through;
 }
 
 /* Explanation button */
