@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#173b32">
+
+    <title>Me quiero parecer a Jesús</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="app-container">
+
+        <header class="app-header">
+            <p class="eyebrow">2 Pedro 1:5–7</p>
+            <h1>Me quiero parecer a Jesús</h1>
+            <p class="subtitle">Mis ocho méritos</p>
+        </header>
+
+        <section class="progress-section">
+            <div class="progress-heading">
+                <span>Mi progreso</span>
+                <span id="progress-count">Marcados: 0 de 8</span>
+            </div>
+
+            <div
+                class="progress-track"
+                role="progressbar"
+                aria-label="Progreso de los ocho méritos"
+                aria-valuemin="0"
+                aria-valuemax="8"
+                aria-valuenow="0"
+                id="progress-bar"
+            >
+                <div id="progress-fill"></div>
+            </div>
+        </section>
+
+        <section class="feedback-section">
+            <p id="feedback" aria-live="polite">
+                Comienza añadiendo Fe
+            </p>
+        </section>
+
+        <section class="checklist" aria-label="Lista de los ocho méritos">
+
+            <label class="merit-item">
+                <input type="checkbox" class="merit-checkbox">
+                <span>1. Fe</span>
+            </label>
+
+            <label class="merit-item">
+                <input type="checkbox" class="merit-checkbox">
+                <span>2. Virtud</span>
+            </label>
+
+            <label class="merit-item">
+                <input type="checkbox" class="merit-checkbox">
+                <span>3. Conocimiento</span>
+            </label>
+
+            <label class="merit-item">
+                <input type="checkbox" class="merit-checkbox">
+                <span>4. Dominio propio</span>
+            </label>
+
+            <label class="merit-item">
+                <input type="checkbox" class="merit-checkbox">
+                <span>5. Paciencia</span>
+            </label>
+
+            <label class="merit-item">
+                <input type="checkbox" class="merit-checkbox">
+                <span>6. Piedad</span>
+            </label>
+
+            <label class="merit-item">
+                <input type="checkbox" class="merit-checkbox">
+                <span>7. Afecto fraternal</span>
+            </label>
+
+            <label class="merit-item">
+                <input type="checkbox" class="merit-checkbox">
+                <span>8. Amor</span>
+            </label>
+
+        </section>
+
+        <button id="explanation-button" type="button">
+            Fe: Confiar en Dios, en Sus Promesas. Convicción, certeza
+        </button>
+
+        <footer>
+            <p>Un paso a la vez.</p>
+        </footer>
+
+    </main>
+
+    <dialog id="explanation-dialog">
+        <div class="dialog-content">
+            <h2 id="dialog-heading"></h2>
+            <p id="dialog-message"></p>
+            <button id="close-dialog" type="button">Cerrar</button>
+        </div>
+    </dialog>
+
+</body>
+</html>
