@@ -165,7 +165,8 @@ body {
 }
 
 .merit-checkbox:checked + span {
-    color: var(--text-muted);
+    color: var(--text-dark);
+    text-decoration: none;
 }
 
 /* Explanation button */
